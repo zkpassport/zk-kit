@@ -9,6 +9,8 @@ export type IMTNode = number | string | bigint
  */
 export type IMTHashFunction = (values: IMTNode[]) => IMTNode
 
+export type IMTAsyncHashFunction = (values: IMTNode[]) => Promise<IMTNode>
+
 /**
  * The Merkle Proof contains the necessary parameters to enable the
  * verifier to be certain that a leaf belongs to the tree. Given the value
